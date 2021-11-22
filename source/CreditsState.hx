@@ -32,10 +32,11 @@ class CreditsState extends MusicBeatState
 		['SPADE',				'spade',			'Logo Artist',					'https://www.youtube.com/channel/UCHdInS6_lu_sQ8XFCW9Oj4w',	0xFFFF0058],
 		['Vaderling',			'vaderling',		'BG Artist',									'https://gamebanana.com/members/2009062',	0xFF299700],
 		['StitchDaFreak',		'stitch',			'Menu BG Artist',								'https://gamebanana.com/members/1915606',	0xFF8D5781],
-		['Aneraggot',			'aneraggot',		'Main "Programmer", destroyer of brain cells',	'https://gamebanana.com/members/1985287',	0xFF0074FF],
+		['Aneraggot',			'aneraggot',		'Main "Coder", destroyer of brain cells',		'https://gamebanana.com/members/1985287',	0xFF0074FF],
 		[''],
 		['Special Thanks'],
-		['Tenzubushi',			'',					'Roughed up BF and GF from vs Tabi',			'https://gamebanana.com/members/1803333',	0xFFFFDF00],
+		['Tenzubushi',			'tenz',				'Roughed up BF and GF from vs Tabi',			'https://gamebanana.com/members/1803333',	0xFFFFDF00],
+		['Lunarcleint'			'tenz'				'Saved the coder from death by brain damamage	]
 		[''],
 		['Psych Engine Team'],
 		['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',					'https://twitter.com/Shadow_Mario_',	0xFFFFDD33],
