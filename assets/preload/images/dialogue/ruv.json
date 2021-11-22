@@ -1,0 +1,50 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		90,
+		135
+	],
+	"scale": 1,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				6,
+				-18
+			],
+			"idle_offsets": [
+				5,
+				-18
+			],
+			"loop_name": "RuvNormalLoop",
+			"idle_name": "RuvNormal0"
+		},
+		{
+			"loop_offsets": [
+				5,
+				-18
+			],
+			"anim": "excited",
+			"idle_offsets": [
+				4,
+				-18
+			],
+			"loop_name": "RuvBruhLoop",
+			"idle_name": "RuvBruh0"
+		},
+		{
+			"loop_offsets": [
+				5,
+				-19
+			],
+			"anim": "pissed",
+			"idle_offsets": [
+				5,
+				-19
+			],
+			"loop_name": "RuvAngeryLoop",
+			"idle_name": "RuvAngery0"
+		}
+	],
+	"image": "Ruv_Dialogue"
+}

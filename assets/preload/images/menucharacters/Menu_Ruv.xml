@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Menu_Ruv.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="M RUV Idle0000" x="6738" y="0" width="652" height="829" pivotX="230.95" pivotY="349.4" frameX="-6" frameY="-55" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0001" x="7390" y="0" width="652" height="829" frameX="-6" frameY="-55" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0002" x="0" y="829" width="617" height="855" frameX="-6" frameY="-29" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0003" x="617" y="829" width="617" height="855" frameX="-6" frameY="-29" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0004" x="1234" y="829" width="581" height="880" frameX="-2" frameY="-4" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0005" x="1815" y="829" width="581" height="880" frameX="-2" frameY="-4" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0006" x="2396" y="829" width="563" height="884" frameX="-1" frameY="0" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0007" x="2959" y="829" width="557" height="884" frameX="0" frameY="0" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0008" x="3516" y="829" width="557" height="884" frameX="0" frameY="0" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0009" x="4073" y="829" width="552" height="884" frameX="0" frameY="0" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0010" x="4625" y="829" width="552" height="884" frameX="0" frameY="0" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0011" x="5177" y="829" width="552" height="884" frameX="0" frameY="0" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0012" x="5729" y="829" width="552" height="884" frameX="0" frameY="0" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0013" x="6281" y="829" width="552" height="884" frameX="0" frameY="0" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0014" x="6833" y="829" width="552" height="884" frameX="0" frameY="0" frameWidth="658" frameHeight="884"/>
+	<SubTexture name="M RUV Idle0015" x="7385" y="829" width="552" height="884" frameX="0" frameY="0" frameWidth="658" frameHeight="884"/>
+</TextureAtlas>
