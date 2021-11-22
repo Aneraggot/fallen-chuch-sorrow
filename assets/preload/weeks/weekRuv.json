@@ -1,0 +1,30 @@
+{
+	"songs": [
+		[
+			"Blood Cold Sorrow",
+			"ruv",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "church",
+	"weekCharacters": [
+		"ruv",
+		"bf",
+		"gf"
+	],
+	"storyName": "Ruvy on a friday night",
+	"weekName": "weekRuv",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

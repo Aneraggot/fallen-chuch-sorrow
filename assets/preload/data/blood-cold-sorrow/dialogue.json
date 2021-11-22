@@ -1,0 +1,60 @@
+{
+	"dialogue": [
+		{
+			"expression": "excited",
+			"text": "We broke the church didn't we",
+			"boxState": "normal",
+			"speed": 0.07,
+			"portrait": "ruv"
+		},
+		{
+			"expression": "talk",
+			"text": "Skeda",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "talk",
+			"text": "Da...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "ruv"
+		},
+		{
+			"expression": "talk",
+			"text": "Ske do beep Ska bop beep?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		},
+		{
+			"expression": "pissed",
+			"text": "ANOTHER RAP BATTLE ARE YOU INSANE?!",
+			"boxState": "angry",
+			"speed": 0.03,
+			"portrait": "ruv"
+		},
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.15,
+			"portrait": "ruv"
+		},
+		{
+			"expression": "excited",
+			"text": "Sure... not like I've got anything to lose\\nanymore",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "ruv"
+		},
+		{
+			"expression": "excited",
+			"text": "*happy beep noises*",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bf"
+		}
+	]
+}

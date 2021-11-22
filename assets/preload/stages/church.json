@@ -1,0 +1,9 @@
+{
+	"directory": "preload/images",
+	"defaultZoom": 0.65,
+	"isPixelStage": false,
+
+	"boyfriend": [950, 500],
+	"girlfriend": [580, 390],
+	"opponent": [180, 400]
+}
