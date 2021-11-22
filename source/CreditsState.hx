@@ -12,9 +12,6 @@ import flixel.math.FlxMath;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import flixel.tweens.FlxTween;
-#if MODS_ALLOWED
-import sys.FileSystem;
-#end
 import lime.utils.Assets;
 
 using StringTools;
@@ -25,7 +22,39 @@ class CreditsState extends MusicBeatState
 
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private var iconArray:Array<AttachedSprite> = [];
-	private var creditsStuff:Array<Dynamic> = [];
+
+	private static var creditsStuff:Array<Dynamic> = [ //Name - Icon name - Description - Link - BG Color
+		['One Night Team'],
+		['Hipstery Dibstery',	'hipstery',			'Musician',										'https://gamebanana.com/members/1891179',	0xFF9F0050],
+		['BitHell',				'bithell',			'Sprite Artist',								'https://gamebanana.com/members/1862896',	0xFFFFFFFF],
+		['Exedious',			'exedious',			'Charter',										'https://gamebanana.com/members/1863210',	0xFFB90E0A],
+		['Amare',				'amare',			'Icon Artist',									'https://gamebanana.com/members/1925878',	0xFFFFFFFF],
+		['SPADE',				'spade',			'Logo Artist',					'https://www.youtube.com/channel/UCHdInS6_lu_sQ8XFCW9Oj4w',	0xFFFF0058],
+		['Vaderling',			'vaderling',		'BG Artist',									'https://gamebanana.com/members/2009062',	0xFF299700],
+		['StitchDaFreak',		'stitch',			'Menu BG Artist',								'https://gamebanana.com/members/1915606',	0xFF8D5781],
+		['Aneraggot',			'aneraggot',		'Main "Programmer", destroyer of brain cells',	'https://gamebanana.com/members/1985287',	0xFF0074FF],
+		[''],
+		['Special Thanks'],
+		['Tenzubushi',			'',					'Roughed up BF and GF from vs Tabi',			'https://gamebanana.com/members/1803333',	0xFFFFDF00],
+		[''],
+		['Psych Engine Team'],
+		['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',					'https://twitter.com/Shadow_Mario_',	0xFFFFDD33],
+		['RiverOaken',			'riveroaken',		'Main Artist/Animator of Psych Engine',				'https://twitter.com/river_oaken',		0xFFC30085],
+		[''],
+		['Engine Contributors'],
+		['shubs',				'shubs',			'New Input System Programmer',						'https://twitter.com/yoshubs',			0xFF4494E6],
+		['PolybiusProxy',		'polybiusproxy',	'.MP4 Video Loader Extension',						'https://twitter.com/polybiusproxy',	0xFFE01F32],
+		['gedehari',			'gedehari',			'Chart Editor\'s Sound Waveform base',				'https://twitter.com/gedehari',			0xFFFF9300],
+		['Keoiki',				'keoiki',			'Note Splash Animations',							'https://twitter.com/Keoiki_',			0xFFFFFFFF],
+		['SandPlanet',			'sandplanet',		'Mascot\'s Owner\nMain Supporter of the Engine',		'https://twitter.com/SandPlanetNG',		0xFFD10616],
+		['bubba',				'bubba',		'Guest Composer for "Hot Dilf"',	'https://www.youtube.com/channel/UCxQTnLmv0OAS63yzk9pVfaw',	0xFF61536A],
+		[''],
+		["Funkin' Crew"],
+		['ninjamuffin99',		'ninjamuffin99',	"Programmer of Friday Night Funkin'",				'https://twitter.com/ninja_muffin99',	0xFFF73838],
+		['PhantomArcade',		'phantomarcade',	"Animator of Friday Night Funkin'",					'https://twitter.com/PhantomArcade3K',	0xFFFFBB1B],
+		['evilsk8r',			'evilsk8r',			"Artist of Friday Night Funkin'",					'https://twitter.com/evilsk8r',			0xFF53E52C],
+		['kawaisprite',			'kawaisprite',		"Composer of Friday Night Funkin'",					'https://twitter.com/kawaisprite',		0xFF6475F3]
+	];
 
 	var bg:FlxSprite;
 	var descText:FlxText;
@@ -45,48 +74,6 @@ class CreditsState extends MusicBeatState
 		grpOptions = new FlxTypedGroup<Alphabet>();
 		add(grpOptions);
 
-		#if MODS_ALLOWED
-		trace("finding mod shit");
-		if (FileSystem.exists(Paths.mods())) {
-			trace("mods folder");
-			if (FileSystem.exists(Paths.modFolders("data/credits.txt"))){
-				trace("credit file");
-				var firstarray:Array<String> = CoolUtil.coolTextFile(Paths.modFolders("data/credits.txt"));
-				trace("found credit shit");
-				
-				for(i in firstarray){
-					var arr:Array<String> = i.split("::");
-					trace(arr);
-					creditsStuff.push(arr);
-				}
-			}
-		}
-		
-		#end
-		var pisspoop = [ //Name - Icon name - Description - Link - BG Color
-			['Psych Engine Team'],
-			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',					'https://twitter.com/Shadow_Mario_',	'0xFFFFDD33'],
-			['RiverOaken',			'riveroaken',		'Main Artist/Animator of Psych Engine',				'https://twitter.com/river_oaken',		'0xFFC30085'],
-			[''],
-			['Engine Contributors'],
-			['shubs',				'shubs',			'New Input System Programmer',						'https://twitter.com/yoshubs',			'0xFF4494E6'],
-			['SqirraRNG',			'gedehari',			'Chart Editor\'s Sound Waveform base',				'https://twitter.com/gedehari',			'0xFFFF9300'],
-			['PolybiusProxy',		'polybiusproxy',	'.MP4 Video Loader Extension',						'https://twitter.com/polybiusproxy',	'0xFFE01F32'],
-			['Keoiki',				'keoiki',			'Note Splash Animations',							'https://twitter.com/Keoiki_',			'0xFFFFFFFF'],
-			['SandPlanet',			'sandplanet',		'Mascot\'s Owner\nMain Supporter of the Engine',		'https://twitter.com/SandPlanetNG',	'0xFFD10616'],
-			['bubba',				'bubba',		'Guest Composer for "Hot Dilf"',	'https://www.youtube.com/channel/UCxQTnLmv0OAS63yzk9pVfaw',	'0xFF61536A'],
-			[''],
-			["Funkin' Crew"],
-			['ninjamuffin99',		'ninjamuffin99',	"Programmer of Friday Night Funkin'",				'https://twitter.com/ninja_muffin99',	'0xFFF73838'],
-			['PhantomArcade',		'phantomarcade',	"Animator of Friday Night Funkin'",					'https://twitter.com/PhantomArcade3K',	'0xFFFFBB1B'],
-			['evilsk8r',			'evilsk8r',			"Artist of Friday Night Funkin'",					'https://twitter.com/evilsk8r',			'0xFF53E52C'],
-			['kawaisprite',			'kawaisprite',		"Composer of Friday Night Funkin'",					'https://twitter.com/kawaisprite',		'0xFF6475F3']
-		];
-		
-		for(i in pisspoop){
-			creditsStuff.push(i);
-		}
-	
 		for (i in 0...creditsStuff.length)
 		{
 			var isSelectable:Bool = !unselectableCheck(i);
@@ -118,7 +105,7 @@ class CreditsState extends MusicBeatState
 		descText.borderSize = 2.4;
 		add(descText);
 
-		bg.color = Std.parseInt(creditsStuff[curSelected][4]);
+		bg.color = creditsStuff[curSelected][4];
 		intendedColor = bg.color;
 		changeSelection();
 		super.create();
@@ -168,7 +155,7 @@ class CreditsState extends MusicBeatState
 				curSelected = 0;
 		} while(unselectableCheck(curSelected));
 
-		var newColor:Int =  Std.parseInt(creditsStuff[curSelected][4]);
+		var newColor:Int = creditsStuff[curSelected][4];
 		if(newColor != intendedColor) {
 			if(colorTween != null) {
 				colorTween.cancel();
