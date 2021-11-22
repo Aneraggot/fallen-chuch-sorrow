@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Ruv_Dialogue.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	
+	<SubTexture name="RuvNormal00" x="0" y="0" width="336" height="288"/>
+	<SubTexture name="RuvNormalLoop00" x="0" y="0" width="336" height="288"/>
+	<SubTexture name="RuvNormalLoop01" x="0" y="0" width="336" height="288"/>
+	<SubTexture name="RuvNormalLoop02" x="0" y="0" width="336" height="288"/>
+	<SubTexture name="RuvNormalLoop03" x="0" y="0" width="336" height="288"/>
+	<SubTexture name="RuvNormalLoop04" x="0" y="0" width="336" height="288"/>
+	<SubTexture name="RuvNormalLoop05" x="0" y="0" width="336" height="288"/>
+	<SubTexture name="RuvBruh00" x="337" y="0" width="336" height="288"/>
+	<SubTexture name="RuvBruhLoop00" x="337" y="0" width="336" height="288"/>
+	<SubTexture name="RuvBruhLoop01" x="337" y="0" width="336" height="288"/>
+	<SubTexture name="RuvBruhLoop02" x="337" y="0" width="336" height="288"/>
+	<SubTexture name="RuvBruhLoop03" x="337" y="0" width="336" height="288"/>
+	<SubTexture name="RuvBruhLoop04" x="337" y="0" width="336" height="288"/>
+	<SubTexture name="RuvBruhLoop05" x="337" y="0" width="336" height="288"/>
+	<SubTexture name="RuvAngery00" x="673" y="0" width="336" height="288"/>
+	<SubTexture name="RuvAngeryLoop00" x="673" y="0" width="336" height="288"/>
+	<SubTexture name="RuvAngeryLoop01" x="673" y="0" width="336" height="288"/>
+	<SubTexture name="RuvAngeryLoop02" x="673" y="0" width="336" height="288"/>
+	<SubTexture name="RuvAngeryLoop03" x="673" y="0" width="336" height="288"/>
+	<SubTexture name="RuvAngeryLoop04" x="673" y="0" width="336" height="288"/>
+	<SubTexture name="RuvAngeryLoop05" x="673" y="0" width="336" height="288"/>
+
+</TextureAtlas>
